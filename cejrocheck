@@ -2,7 +2,7 @@
 
 merchantDay=$(curl -s https://datatime.mateuszpas.pl/ | egrep -o 'weekDayNumber\":\"[1-7]' | rev | cut -b 1)
 
-if [[ "$merchantDay" == 7 ]]; then
+if [[ "$merchantDay" == 0 ]]; then
         echo -e "W NIEDZIELE I ŚWIĘTA NIECZYNNE\n"
         curl 'http://api.biblia.com/v1/bible/content/LEB.txt.txt?passage=Exodus20.8-11&callback=myCallbackFunction&key=dfdd4a117c21f9e748cce070f2381ab5'
         echo -e "\n"
