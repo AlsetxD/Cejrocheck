@@ -10,5 +10,5 @@ if [[ "$merchantDay" == 0 ]]; then
         echo -e "\n"
 
 else
-        echo "Czynne, pan Wojciech zaprasza."
+        echo "Sklep Kolonialny czynny, pan Wojciech zaprasza."
 fi
